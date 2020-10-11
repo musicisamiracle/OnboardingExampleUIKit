@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "samuele-errico-piccarini-QjV0-62uGfA-unsplash.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		ABDD02AE2533AD22006BAD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02AD2533AD22006BAD4E /* AppDelegate.swift */; };
 		ABDD02B02533AD22006BAD4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02AF2533AD22006BAD4E /* SceneDelegate.swift */; };
-		ABDD02B22533AD22006BAD4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02B12533AD22006BAD4E /* ViewController.swift */; };
-		ABDD02B52533AD22006BAD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDD02B32533AD22006BAD4E /* Main.storyboard */; };
 		ABDD02B72533AD24006BAD4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDD02B62533AD24006BAD4E /* Assets.xcassets */; };
 		ABDD02BA2533AD24006BAD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDD02B82533AD24006BAD4E /* LaunchScreen.storyboard */; };
+		ABDD02CE2533AEC2006BAD4E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02C82533AEC2006BAD4E /* OnboardingViewController.swift */; };
+		ABDD02CF2533AEC2006BAD4E /* OnboardingPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02C92533AEC2006BAD4E /* OnboardingPresentable.swift */; };
+		ABDD02D02533AEC2006BAD4E /* OnboardingViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02CA2533AEC2006BAD4E /* OnboardingViewConfiguration.swift */; };
+		ABDD02D12533AEC2006BAD4E /* OnboardingVCFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02CB2533AEC2006BAD4E /* OnboardingVCFactory.swift */; };
+		ABDD02D82533AF9E006BAD4E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02D72533AF9E006BAD4E /* Extensions.swift */; };
+		ABDD02DB2533B041006BAD4E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD02DA2533B041006BAD4E /* LocationManager.swift */; };
+		ABDD02E52533BBC5006BAD4E /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDD02C72533AEC2006BAD4E /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABDD02AA2533AD22006BAD4E /* OnboardingExampleUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingExampleUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDD02AD2533AD22006BAD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABDD02AF2533AD22006BAD4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABDD02B12533AD22006BAD4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ABDD02B42533AD22006BAD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABDD02B62533AD24006BAD4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABDD02B92533AD24006BAD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABDD02BB2533AD24006BAD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABDD02C72533AEC2006BAD4E /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		ABDD02C82533AEC2006BAD4E /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		ABDD02C92533AEC2006BAD4E /* OnboardingPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPresentable.swift; sourceTree = "<group>"; };
+		ABDD02CA2533AEC2006BAD4E /* OnboardingViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewConfiguration.swift; sourceTree = "<group>"; };
+		ABDD02CB2533AEC2006BAD4E /* OnboardingVCFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVCFactory.swift; sourceTree = "<group>"; };
+		ABDD02D72533AF9E006BAD4E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ABDD02DA2533B041006BAD4E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		ABDD02AC2533AD22006BAD4E /* OnboardingExampleUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				ABDD02D62533AF8A006BAD4E /* Helpers */,
+				ABDD02C62533AEC2006BAD4E /* Onboarding */,
 				ABDD02AD2533AD22006BAD4E /* AppDelegate.swift */,
 				ABDD02AF2533AD22006BAD4E /* SceneDelegate.swift */,
-				ABDD02B12533AD22006BAD4E /* ViewController.swift */,
-				ABDD02B32533AD22006BAD4E /* Main.storyboard */,
 				ABDD02B62533AD24006BAD4E /* Assets.xcassets */,
 				ABDD02B82533AD24006BAD4E /* LaunchScreen.storyboard */,
 				ABDD02BB2533AD24006BAD4E /* Info.plist */,
+				ABDD02DA2533B041006BAD4E /* LocationManager.swift */,
 			);
 			path = OnboardingExampleUIKit;
+			sourceTree = "<group>";
+		};
+		ABDD02C62533AEC2006BAD4E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ABDD02C72533AEC2006BAD4E /* Onboarding.storyboard */,
+				ABDD02C82533AEC2006BAD4E /* OnboardingViewController.swift */,
+				ABDD02C92533AEC2006BAD4E /* OnboardingPresentable.swift */,
+				ABDD02CA2533AEC2006BAD4E /* OnboardingViewConfiguration.swift */,
+				ABDD02CB2533AEC2006BAD4E /* OnboardingVCFactory.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		ABDD02D62533AF8A006BAD4E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ABDD02D72533AF9E006BAD4E /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +157,7 @@
 			files = (
 				ABDD02BA2533AD24006BAD4E /* LaunchScreen.storyboard in Resources */,
 				ABDD02B72533AD24006BAD4E /* Assets.xcassets in Resources */,
-				ABDD02B52533AD22006BAD4E /* Main.storyboard in Resources */,
+				ABDD02E52533BBC5006BAD4E /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +168,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABDD02B22533AD22006BAD4E /* ViewController.swift in Sources */,
+				ABDD02D12533AEC2006BAD4E /* OnboardingVCFactory.swift in Sources */,
+				ABDD02D82533AF9E006BAD4E /* Extensions.swift in Sources */,
+				ABDD02DB2533B041006BAD4E /* LocationManager.swift in Sources */,
 				ABDD02AE2533AD22006BAD4E /* AppDelegate.swift in Sources */,
+				ABDD02D02533AEC2006BAD4E /* OnboardingViewConfiguration.swift in Sources */,
 				ABDD02B02533AD22006BAD4E /* SceneDelegate.swift in Sources */,
+				ABDD02CF2533AEC2006BAD4E /* OnboardingPresentable.swift in Sources */,
+				ABDD02CE2533AEC2006BAD4E /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ABDD02B32533AD22006BAD4E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABDD02B42533AD22006BAD4E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ABDD02B82533AD24006BAD4E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.OnboardingExampleUIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.OnboardingExampleUIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
